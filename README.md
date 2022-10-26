@@ -1,6 +1,6 @@
-# TODO - Your title
+# Control Character Separated Files (.ccsv)
 
-This is the working area for the individual Internet-Draft, "TODO - Your title".
+This is the working area for the individual Internet-Draft, "Control Character Separated Files (.ccsv)".
 
 * [Editor's Copy](https://oldgrognard.github.io/ccsv-id/#go.draft-todo-protocol.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-todo-protocol)

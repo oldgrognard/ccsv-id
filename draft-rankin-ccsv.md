@@ -1,5 +1,5 @@
 ---
-title: "Control Character Separated Files"
+title: "Control Character Separated Files (.ccsv)"
 abbrev: "CCSV"
 category: info
 
