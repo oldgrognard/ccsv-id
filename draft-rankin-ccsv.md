@@ -1,9 +1,9 @@
 ---
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: "Control Character Separated Files"
+abbrev: "CCSV"
 category: info
 
-docname: draft-todo-protocol-latest
+docname: draft-rankin-ccsv-latest
 submissiontype: IETF  # also: "independent", "IAB", or "IRTF"
 number:
 date:
@@ -12,9 +12,10 @@ v: 3
 # area: AREA
 # workgroup: WG Working Group
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - ccsv
+ - control characters
+ - data import
+ - data export
 venue:
 #  group: WG
 #  type: Working Group
@@ -25,9 +26,9 @@ venue:
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: "84822346+oldgrognard@users.noreply.github.com"
+    fullname: M. Rankin
+    organization: ICF
+    email: "mrankin@reactor.zone"
 
 normative:
 
