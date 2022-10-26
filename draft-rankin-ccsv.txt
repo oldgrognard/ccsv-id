@@ -8,7 +8,7 @@ Intended status: Informational                           26 October 2022
 Expires: 29 April 2023
 
 
-                   Control Character Separated Files
+               Control Character Separated Files (.ccsv)
                         draft-rankin-ccsv-latest
 
 Abstract
