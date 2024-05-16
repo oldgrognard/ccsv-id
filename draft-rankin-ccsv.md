@@ -26,7 +26,7 @@ venue:
 author:
  -
     fullname: "Mike Rankin"
-    organization: Your Organization Here
+    organization: "Individual Contributor"
     email: "mrankin@oldgrognard.pub"
 
 normative:
