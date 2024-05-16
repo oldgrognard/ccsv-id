@@ -3,7 +3,7 @@
 
 
 Network Working Group                                          M. Rankin
-Internet-Draft                                    Your Organization Here
+Internet-Draft                                    Individual Contributor
 Intended status: Informational                               16 May 2024
 Expires: 17 November 2024
 
@@ -106,5 +106,5 @@ Acknowledgments
 Author's Address
 
    Mike Rankin
-   Your Organization Here
+   Individual Contributor
    Email: mrankin@oldgrognard.pub
