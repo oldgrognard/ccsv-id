@@ -19,11 +19,11 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: "Control Character Separated Value Files"
+abbrev: "CCSV"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-rankin-ccsv
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -40,7 +40,7 @@ venue:
   type: Working Group
   mail: WG@example.com
   arch: https://example.com/WG
-  github: USER/REPO
+  github: oldgrognard/ccsv-id
   latest: https://example.com/LATEST
 
 author:
