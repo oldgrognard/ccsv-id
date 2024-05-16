@@ -27,7 +27,7 @@ author:
  -
     fullname: "Mike Rankin"
     organization: Your Organization Here
-    email: "mrankin@reactor.zone"
+    email: "mrankin@oldgrognard.pub"
 
 normative:
 
