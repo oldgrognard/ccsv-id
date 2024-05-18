@@ -31,8 +31,6 @@ author:
 
 normative:
 
-1. Crocker, D., Ed. and P. Overell, "Augmented BNF for Syntax Specifications: ABNF", RFC 5234, January 2008
-
 informative:
 
 
@@ -54,9 +52,7 @@ TODO Introduction
 
 ## Definition of the CCSV format
 
-The ABNF grammar [1] appears as follows:
-
-
+The ABNF grammar [@STD68] appears as follows:
 
 
 # Security Considerations
