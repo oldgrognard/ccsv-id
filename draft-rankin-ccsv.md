@@ -54,15 +54,16 @@ TODO Introduction
 
 The ABNF grammar {{!STD68}} appears as follows:
 
-file = [header RS] record *(US record) [RS]
+~~~
+file   = [header RS] record *(US record) [RS]
 header = name *(US name)
 record = field *(US field)
-name = field
-field = *VCHAR
-VCHAR = %x21-7E
-RS = %x1E
-US = %x1F
-
+name   = field
+field  = *VCHAR
+VCHAR  = %x21-7E
+RS     = %x1E
+US     = %x1F
+~~~
 
 # Security Considerations
 
