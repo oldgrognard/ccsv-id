@@ -1178,14 +1178,14 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 <p id="section-2.1-1">The ABNF grammar <span>[<a href="#STD68" class="cite xref">STD68</a>]</span> appears as follows:<a href="#section-2.1-1" class="pilcrow">¶</a></p>
 <div class="alignLeft art-text artwork" id="section-2.1-2">
 <pre>
-file   = [header RS] record *(US record) [RS]
-header = name *(US name)
-record = field *(US field)
-name   = field
-field  = *VCHAR
-VCHAR  = %x21-7E
-RS     = %x1E
-US     = %x1F
+file = [ header RS ] *record [ RS ]
+header = name *( US name )
+record = field *( US field )
+name = field
+field = *VCHAR
+VCHAR = %x21-7E
+RS = %x1E
+US = %x1F
 </pre><a href="#section-2.1-2" class="pilcrow">¶</a>
 </div>
 </section>
