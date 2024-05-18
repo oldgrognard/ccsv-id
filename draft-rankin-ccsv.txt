@@ -86,7 +86,7 @@ Table of Contents
 
 2.1.  Definition of the CCSV format
 
-   The ABNF grammar [@STD68] appears as follows:
+   The ABNF grammar [STD68] appears as follows:
 
 3.  Security Considerations
 
@@ -106,6 +106,15 @@ Table of Contents
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+   [STD68]    Internet Standard 68,
+              <https://www.rfc-editor.org/info/std68>.
+              At the time of writing, this STD comprises the following:
+
+              Crocker, D., Ed. and P. Overell, "Augmented BNF for Syntax
+              Specifications: ABNF", STD 68, RFC 5234,
+              DOI 10.17487/RFC5234, January 2008,
+              <https://www.rfc-editor.org/info/rfc5234>.
 
 Acknowledgments
 
