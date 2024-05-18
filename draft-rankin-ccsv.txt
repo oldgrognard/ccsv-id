@@ -86,7 +86,7 @@ Table of Contents
 
 2.1.  Definition of the CCSV format
 
-   The ABNF grammar [1] appears as follows:
+   The ABNF grammar [@STD68] appears as follows:
 
 3.  Security Considerations
 
