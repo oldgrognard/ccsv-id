@@ -1,5 +1,5 @@
 ---
-title: "Control Character Separated Value Files"
+title: "Common Format and Media Type for Control-Character-Separated Values (CCSV) Files"
 abbrev: "CCSV"
 category: info
 
@@ -31,12 +31,14 @@ author:
 
 normative:
 
+1. Crocker, D., Ed. and P. Overell, "Augmented BNF for Syntax Specifications: ABNF", RFC 5234, January 2008
+
 informative:
 
 
 --- abstract
 
-TODO Abstract
+This document documents the format used for Control-Character-Separated Values (CCSV) files and registers the associated MIME type "text/ccsv".
 
 
 --- middle
@@ -49,6 +51,12 @@ TODO Introduction
 # Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
+
+## Definition of the CCSV format
+
+The ABNF grammar [1] appears as follows:
+
+
 
 
 # Security Considerations
