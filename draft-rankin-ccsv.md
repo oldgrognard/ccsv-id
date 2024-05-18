@@ -52,7 +52,7 @@ TODO Introduction
 
 ## Definition of the CCSV format
 
-The ABNF grammar [@STD68] appears as follows:
+The ABNF grammar {{!STD68}} appears as follows:
 
 
 # Security Considerations
