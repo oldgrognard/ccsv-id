@@ -4,16 +4,19 @@
 
 Network Working Group                                          M. Rankin
 Internet-Draft                                    Individual Contributor
-Intended status: Informational                               16 May 2024
-Expires: 17 November 2024
+Intended status: Informational                               18 May 2024
+Expires: 19 November 2024
 
 
-                Control Character Separated Value Files
+  Common Format and Media Type for Control-Character-Separated Values
+                              (CCSV) Files
                         draft-rankin-ccsv-latest
 
 Abstract
 
-   TODO Abstract
+   This document documents the format used for Control-Character-
+   Separated Values (CCSV) files and registers the associated MIME type
+   "text/ccsv".
 
 About This Document
 
@@ -42,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 17 November 2024.
+   This Internet-Draft will expire on 19 November 2024.
 
 Copyright Notice
 
@@ -62,6 +65,7 @@ Table of Contents
 
    1.  Introduction
    2.  Conventions and Definitions
+     2.1.  Definition of the CCSV format
    3.  Security Considerations
    4.  IANA Considerations
    5.  Normative References
@@ -79,6 +83,10 @@ Table of Contents
    "OPTIONAL" in this document are to be interpreted as described in
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
+
+2.1.  Definition of the CCSV format
+
+   The ABNF grammar [1] appears as follows:
 
 3.  Security Considerations
 
