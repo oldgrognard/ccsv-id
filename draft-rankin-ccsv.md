@@ -55,15 +55,12 @@ TODO Introduction
 The ABNF grammar {{!STD68}} appears as follows:
 
 ~~~
-file = header SOT *(record RS) record EOT
-header = SOH name *( US name )
+file = header RS *(record RS) [record]
+header = name *( US name )
 record = field *( US field )
 name = field
 field = *VCHAR
 VCHAR = %x21-7E ; visible characters
-SOH = %x01 ; start of header
-SOT = %x02 ; start of text
-EOT = %x04 ; end of transmission
 RS = %x1E ; record separator
 US = %x1F ; unit separator
 
