@@ -26,7 +26,7 @@ venue:
 author:
  -
     fullname: "Mike Rankin"
-    organization: "Individual Contributor"
+    organization: "ICF International, Inc."
     email: "mrankin@oldgrognard.pub"
 
 normative:
@@ -43,7 +43,7 @@ This document documents the format used for Control-Character-Separated Values (
 
 # Introduction
 
-A CCSV (Control-Character-Separated Values file) is a file format that enables moving data between spreadsheets, statistical analysis programs, databases, and any other program that works with rectangular data. It is very similar to (CSV) Comma-Separated Values files {{!RFC4180}}, (TSV) Tab-Separated Values files, and their derivatives. Unlike those file types, the CCSV minimizes usage ambiguity by having non-printable characters as delimiters. The two delimiter characters may not appear in the document's text, making the practice of escaping certain characters or adding additional delimiters for certain strings unnecessary. This document seeks to define the format of Control Character Separated Values (CCSV) files and formally register the "text/ccsv" Media Type for CCSV in accordance with {{!RFC4288}}
+A CCSV (Control-Character-Separated Values file) is a file format that enables moving data between spreadsheets, statistical analysis programs, databases, and any other program that works with rectangular data. It is very similar to (CSV) Comma-Separated Values files {{!RFC4180}}, (TSV) Tab-Separated Values files, and their derivatives. Unlike those file types, the CCSV minimizes usage ambiguity by having non-printable characters as delimiters. The two delimiter characters may not appear in the document's text, making the practice of escaping certain characters or adding additional delimiters for certain strings unnecessary. This document seeks to define the format of Control Character Separated Values (CCSV) files and formally register the "text/ccsv" Media Type for CCSV in accordance with {{!BCP13}}.
 
 # Conventions and Definitions
 
@@ -57,7 +57,7 @@ In order for a file to be a CCSV, it MUST adhere to the following formatting rul
 1. A Unit Separator (US - ASCII entity %x1E) is used between each field in a record.
 1. A CCSV MUST begin with a header.  The header consists of the names of the columns separated with (US) entities.
 1. The header is terminated with the (RS) entity if the document contains any records.
-1. Each record and the header must contain the same number of (US) entities i.e., each record and the header must have the same number of fields.
+1. The header and each record MUST contain the same number of (US) entities i.e., the header and each record MUST have the same number of fields.
 1. Each record in the body is delimited with a (RS) entity.  Note that carriage returns and line feeds are not part of the delimiter and are valid characters in the body of a field.
 1. Each field within a record is delimited with the (US) entity.
 1. The (US) entity and the (RS) separator MUST NOT appear in the body of a field.
@@ -84,7 +84,47 @@ TODO Security
 
 # IANA Considerations
 
-This document has no IANA actions.
+This section provides the media-type registration application (as per {{!RFC6838}}).
+
+Type name: text
+
+Subtype name: ccsv
+
+Required parameters: n/a
+
+Optional parameters: 
+	charset: 
+
+Encoding considerations:
+
+Security considerations:
+
+Interoperability considerations:
+
+Published specification:
+
+Applications that use this media type:
+
+Fragment identifier considerations:
+
+Additional information:
+
+	Deprecated alias names for this type:
+	Magic number(s):
+	File extension(s):
+	Macintosh file type code(s)
+
+Person & email address to contact for further information:
+
+Intended usage: COMMON
+
+Restrictions on usage:
+
+Author: Mike Rankin
+
+Change controller:
+
+Provisional registration?
 
 
 --- back
