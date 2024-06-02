@@ -93,7 +93,7 @@ Subtype name: ccsv
 Required parameters: n/a
 
 Optional parameters: 
-	charset: 
+  charset: 
 
 Encoding considerations:
 
@@ -109,10 +109,10 @@ Fragment identifier considerations:
 
 Additional information:
 
-	Deprecated alias names for this type:
-	Magic number(s):
-	File extension(s):
-	Macintosh file type code(s)
+  Deprecated alias names for this type:
+  Magic number(s):
+  File extension(s):
+  Macintosh file type code(s)
 
 Person & email address to contact for further information:
 
