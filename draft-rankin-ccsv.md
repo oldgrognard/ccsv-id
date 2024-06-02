@@ -92,7 +92,7 @@ Subtype name: ccsv
 
 Required parameters: n/a
 
-Optional parameters: 
+Optional parameters:
   charset:
 
 Encoding considerations:
