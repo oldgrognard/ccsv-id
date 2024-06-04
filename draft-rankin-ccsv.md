@@ -65,6 +65,7 @@ In order for a file to be a CCSV, it MUST adhere to the following formatting rul
 
 The ABNF grammar {{!STD68}} appears as follows:
 
+(this needs to be expanded to provide for the Byte Order Marker (BOM) as well as the default character set of utf-8)
 ~~~
 file = header RS *(record RS) [record]
 header = name *( US name )
@@ -90,35 +91,34 @@ Type name: text
 
 Subtype name: ccsv
 
-Required parameters: n/a
+Required parameters: N/A
 
-Optional parameters: 
-	charset: 
+Optional parameters: N/A
 
-Encoding considerations:
+Encoding considerations: The "charset" parameter is not used for a CCSV file becuase the charset information is transported inside the payload by using a Byte Order Marker (BOM) as the first item(s) in the file.
 
 Security considerations:
 
 Interoperability considerations:
 
-Published specification:
+Published specification: https://ccsv.io
 
 Applications that use this media type:
 
-Fragment identifier considerations:
+Fragment identifier considerations: N/A
 
 Additional information:
 
-	Deprecated alias names for this type:
-	Magic number(s):
-	File extension(s):
-	Macintosh file type code(s)
+	Deprecated alias names for this type: N/A
+	Magic number(s): (BOM?)
+	File extension(s): CCSV
+	Macintosh file type code(s): 
 
 Person & email address to contact for further information:
 
 Intended usage: COMMON
 
-Restrictions on usage:
+Restrictions on usage: N/A
 
 Author: Mike Rankin
 
