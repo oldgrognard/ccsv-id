@@ -4,8 +4,8 @@
 
 Network Working Group                                          M. Rankin
 Internet-Draft                                   ICF International, Inc.
-Intended status: Informational                               2 June 2024
-Expires: 4 December 2024
+Intended status: Informational                               4 June 2024
+Expires: 6 December 2024
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 4 December 2024.
+   This Internet-Draft will expire on 6 December 2024.
 
 Copyright Notice
 
@@ -128,14 +128,13 @@ Table of Contents
 
    The ABNF grammar [STD68] appears as follows:
 
-   file = header RS *(record RS) [record]
-   header = name *( US name )
-   record = field *( US field )
-   name = field
-   field = *VCHAR
-   VCHAR = %x21-7E ; visible characters
-   RS = %x1E ; record separator
-   US = %x1F ; unit separator
+   (this needs to be expanded to provide for the Byte Order Marker (BOM)
+   as well as the default character set of utf-8) ~~~ file = header RS
+   *(record RS) [record] header = name *( US name ) record = field *( US
+   field ) name = field field = *VCHAR VCHAR = %x21-7E ; visible
+   characters RS = %x1E ; record separator US = %x1F ; unit separator
+
+   ~~~
 
 3.  Security Considerations
 
@@ -150,32 +149,37 @@ Table of Contents
 
    Subtype name: ccsv
 
-   Required parameters: n/a
+   Required parameters: N/A
 
-   Optional parameters: charset:
+   Optional parameters: N/A
 
-   Encoding considerations:
+   Encoding considerations: The "charset" parameter is not used for a
+   CCSV file becuase the charset information is transported inside the
+   payload by using a Byte Order Marker (BOM) as the first item(s) in
+   the file.
 
    Security considerations:
 
    Interoperability considerations:
 
-   Published specification:
+   Published specification: https://ccsv.io
 
    Applications that use this media type:
 
-   Fragment identifier considerations:
+   Fragment identifier considerations: N/A
 
    Additional information:
 
-   Deprecated alias names for this type: Magic number(s): File
-   extension(s): Macintosh file type code(s):
+       Deprecated alias names for this type: N/A
+       Magic number(s): (BOM?)
+       File extension(s): CCSV
+       Macintosh file type code(s): TEXT
 
    Person & email address to contact for further information:
 
    Intended usage: COMMON
 
-   Restrictions on usage:
+   Restrictions on usage: N/A
 
    Author: Mike Rankin
 
