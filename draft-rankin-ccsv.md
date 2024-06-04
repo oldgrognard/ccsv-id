@@ -112,7 +112,7 @@ Additional information:
 	Deprecated alias names for this type: N/A
 	Magic number(s): (BOM?)
 	File extension(s): CCSV
-	Macintosh file type code(s): 
+	Macintosh file type code(s): TEXT
 
 Person & email address to contact for further information:
 
