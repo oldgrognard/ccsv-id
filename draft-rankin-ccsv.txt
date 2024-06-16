@@ -127,14 +127,14 @@ Table of Contents
    8.  The (US) entity and the (RS) separator MUST NOT appear in the
        body of a field.
 
-   The ABNF grammar [STD68] appears as follows: ```
+   The ABNF grammar [STD68] appears as follows: ~~~~
 
    file = header RS *(record RS) [record] header = name *( US name )
    record = field *( US field ) name = field field = *VCHAR VCHAR =
    %x21-7E ; visible characters RS = %x1E ; record separator US = %x1F ;
    unit separator
 
-   ```
+   ~~~
 
 3.  Encoding Considerations
 
