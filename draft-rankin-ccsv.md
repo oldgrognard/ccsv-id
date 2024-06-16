@@ -67,6 +67,7 @@ The ABNF grammar {{!STD68}} appears as follows:
 
 (this needs to be expanded to provide for the Byte Order Marker (BOM) as well as the default character set of utf-8)
 ~~~
+
 file = header RS *(record RS) [record]
 header = name *( US name )
 record = field *( US field )
