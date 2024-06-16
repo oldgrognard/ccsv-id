@@ -64,8 +64,6 @@ In order for a file to be a CCSV, it MUST adhere to the following formatting rul
 
 
 The ABNF grammar {{!STD68}} appears as follows:
-
-(this needs to be expanded to provide for the Byte Order Marker (BOM) as well as the default character set of utf-8)
 ~~~
 
 file = header RS *(record RS) [record]
@@ -78,6 +76,8 @@ RS = %x1E ; record separator
 US = %x1F ; unit separator
 
 ~~~
+
+# Encoding Considerations
 
 # Security Considerations
 
@@ -96,7 +96,7 @@ Required parameters: N/A
 
 Optional parameters: N/A
 
-Encoding considerations: The "charset" parameter is not used for a CCSV file becuase the charset information is transported inside the payload by using a Byte Order Marker (BOM) as the first item(s) in the file.
+Encoding considerations: utf-8
 
 Security considerations:
 
@@ -111,7 +111,7 @@ Fragment identifier considerations: N/A
 Additional information:
 
 	Deprecated alias names for this type: N/A
-	Magic number(s): (BOM?)
+	Magic number(s): N/A
 	File extension(s): CCSV
 	Macintosh file type code(s): TEXT
 
