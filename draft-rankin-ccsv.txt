@@ -4,8 +4,8 @@
 
 Network Working Group                                          M. Rankin
 Internet-Draft                                   ICF International, Inc.
-Intended status: Informational                               4 June 2024
-Expires: 6 December 2024
+Intended status: Informational                              16 June 2024
+Expires: 18 December 2024
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 6 December 2024.
+   This Internet-Draft will expire on 18 December 2024.
 
 Copyright Notice
 
@@ -129,10 +129,12 @@ Table of Contents
    The ABNF grammar [STD68] appears as follows:
 
    (this needs to be expanded to provide for the Byte Order Marker (BOM)
-   as well as the default character set of utf-8) ~~~ file = header RS
-   *(record RS) [record] header = name *( US name ) record = field *( US
-   field ) name = field field = *VCHAR VCHAR = %x21-7E ; visible
-   characters RS = %x1E ; record separator US = %x1F ; unit separator
+   as well as the default character set of utf-8) ~~~
+
+   file = header RS *(record RS) [record] header = name *( US name )
+   record = field *( US field ) name = field field = *VCHAR VCHAR =
+   %x21-7E ; visible characters RS = %x1E ; record separator US = %x1F ;
+   unit separator
 
    ~~~
 
