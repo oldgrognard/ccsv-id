@@ -64,7 +64,7 @@ In order for a file to be a CCSV, it MUST adhere to the following formatting rul
 
 
 The ABNF grammar {{!STD68}} appears as follows:
-~~~
+```
 
 file = header RS *(record RS) [record]
 header = name *( US name )
@@ -75,7 +75,7 @@ VCHAR = %x21-7E ; visible characters
 RS = %x1E ; record separator
 US = %x1F ; unit separator
 
-~~~
+```
 
 # Encoding Considerations
 
