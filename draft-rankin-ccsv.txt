@@ -66,9 +66,10 @@ Table of Contents
    1.  Introduction
    2.  Conventions and Definitions
      2.1.  Definition of the CCSV format
-   3.  Security Considerations
-   4.  IANA Considerations
-   5.  Normative References
+   3.  Encoding Considerations
+   4.  Security Considerations
+   5.  IANA Considerations
+   6.  Normative References
    Acknowledgments
    Author's Address
 
@@ -126,10 +127,7 @@ Table of Contents
    8.  The (US) entity and the (RS) separator MUST NOT appear in the
        body of a field.
 
-   The ABNF grammar [STD68] appears as follows:
-
-   (this needs to be expanded to provide for the Byte Order Marker (BOM)
-   as well as the default character set of utf-8) ~~~
+   The ABNF grammar [STD68] appears as follows: ~~~
 
    file = header RS *(record RS) [record] header = name *( US name )
    record = field *( US field ) name = field field = *VCHAR VCHAR =
@@ -138,11 +136,13 @@ Table of Contents
 
    ~~~
 
-3.  Security Considerations
+3.  Encoding Considerations
+
+4.  Security Considerations
 
    TODO Security
 
-4.  IANA Considerations
+5.  IANA Considerations
 
    This section provides the media-type registration application (as per
    [RFC6838]).
@@ -155,10 +155,7 @@ Table of Contents
 
    Optional parameters: N/A
 
-   Encoding considerations: The "charset" parameter is not used for a
-   CCSV file becuase the charset information is transported inside the
-   payload by using a Byte Order Marker (BOM) as the first item(s) in
-   the file.
+   Encoding considerations: utf-8
 
    Security considerations:
 
@@ -173,7 +170,7 @@ Table of Contents
    Additional information:
 
        Deprecated alias names for this type: N/A
-       Magic number(s): (BOM?)
+       Magic number(s): N/A
        File extension(s): CCSV
        Macintosh file type code(s): TEXT
 
@@ -189,7 +186,7 @@ Table of Contents
 
    Provisional registration?
 
-5.  Normative References
+6.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
