@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-16T00:19:33.359936+00:00",
+  "timestamp": "2024-06-18T00:18:02.606566+00:00",
   "repo": "oldgrognard/ccsv-id",
   "labels": [
     {
@@ -49,6 +49,179 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
-  "pulls": []
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOL3PoBc6MZrnT",
+      "title": "RS is U+001E, US is U+001F, but you really want RS (U+001E) and FS (U+001C)",
+      "url": "https://github.com/oldgrognard/ccsv-id/issues/1",
+      "state": "OPEN",
+      "author": "cabo",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-16T08:18:05Z",
+      "updatedAt": "2024-06-16T08:18:05Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 2,
+      "id": "I_kwDOL3PoBc6MZrqa",
+      "title": "Don't use BOM",
+      "url": "https://github.com/oldgrognard/ccsv-id/issues/2",
+      "state": "CLOSED",
+      "author": "cabo",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-16T08:18:17Z",
+      "updatedAt": "2024-06-16T20:08:58Z",
+      "closedAt": "2024-06-16T20:08:58Z",
+      "comments": [
+        {
+          "author": "oldgrognard",
+          "authorAssociation": "OWNER",
+          "body": "Thanks for your input. I've been vacillating between including this and not including it. Guidance from things like [rfc6657/](https://datatracker.ietf.org/doc/rfc6657/) and [proposed update for Unicode v16](https://www.unicode.org/L2/L2021/21038-bom-guidance.pdf) can seem contradictory or at least indeterminate. In the cases where I've been using the CCSV format, I've never used it.  From a practical standpoint, I agree that it makes sense to remove it altogether since it may cause issues with software running in US-ASCII mode that sees a file starting with something that it doesn't understand. ",
+          "createdAt": "2024-06-16T19:43:23Z",
+          "updatedAt": "2024-06-16T19:45:43Z"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOL3PoBc6MZrzY",
+      "title": "Add a blank line bafore the ABNF so it comes out right",
+      "url": "https://github.com/oldgrognard/ccsv-id/issues/3",
+      "state": "CLOSED",
+      "author": "cabo",
+      "authorAssociation": "NONE",
+      "assignees": [
+        "oldgrognard"
+      ],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-16T08:18:42Z",
+      "updatedAt": "2024-06-17T00:47:01Z",
+      "closedAt": "2024-06-17T00:47:01Z",
+      "comments": [
+        {
+          "author": "oldgrognard",
+          "authorAssociation": "OWNER",
+          "body": "Fix needs to be corrected.",
+          "createdAt": "2024-06-17T00:19:19Z",
+          "updatedAt": "2024-06-17T00:19:19Z"
+        }
+      ]
+    }
+  ],
+  "pulls": [
+    {
+      "number": 4,
+      "id": "PR_kwDOL3PoBc5ynl5L",
+      "title": "Adding a blank line to fix formatting.",
+      "url": "https://github.com/oldgrognard/ccsv-id/pull/4",
+      "state": "MERGED",
+      "author": "oldgrognard",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-16T19:16:14Z",
+      "updatedAt": "2024-06-16T21:14:53Z",
+      "baseRepository": "oldgrognard/ccsv-id",
+      "baseRefName": "main",
+      "baseRefOid": "c8e383d3acd031bb538147cd0905c9e7cc9dc7fd",
+      "headRepository": "oldgrognard/ccsv-id",
+      "headRefName": "3-add-a-blank-line-bafore-the-abnf-so-it-comes-out-right",
+      "headRefOid": "d221fd16ef3990367f952ad02ffe4315223600e2",
+      "closedAt": "2024-06-16T19:17:21Z",
+      "mergedAt": "2024-06-16T19:17:21Z",
+      "mergedBy": "oldgrognard",
+      "mergeCommit": {
+        "oid": "3ba4545a9e5d4d76daa7a7284161c2f9aa45aa5f"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOL3PoBc5-dNfK",
+          "commit": {
+            "abbreviatedOid": "d221fd1"
+          },
+          "author": "cabo",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-06-16T21:14:52Z",
+          "updatedAt": "2024-06-16T21:14:53Z",
+          "comments": [
+            {
+              "originalPosition": 4,
+              "body": "Actually, I meant a blank line before the ~~~ (the way it is ~~~ becomes part of the paragraph before)",
+              "createdAt": "2024-06-16T21:14:52Z",
+              "updatedAt": "2024-06-16T21:14:53Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDOL3PoBc5ynqOT",
+      "title": "Removing reference to BoM and designating utf-8 encoding.",
+      "url": "https://github.com/oldgrognard/ccsv-id/pull/5",
+      "state": "MERGED",
+      "author": "oldgrognard",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-16T20:08:23Z",
+      "updatedAt": "2024-06-16T20:09:15Z",
+      "baseRepository": "oldgrognard/ccsv-id",
+      "baseRefName": "main",
+      "baseRefOid": "3ba4545a9e5d4d76daa7a7284161c2f9aa45aa5f",
+      "headRepository": "oldgrognard/ccsv-id",
+      "headRefName": "2-dont-use-bom",
+      "headRefOid": "b1efc5f0f15e562d712fc651f5bbc7b66ca2e54a",
+      "closedAt": "2024-06-16T20:08:57Z",
+      "mergedAt": "2024-06-16T20:08:57Z",
+      "mergedBy": "oldgrognard",
+      "mergeCommit": {
+        "oid": "728aea8d93c2b5edac0f71d285a2bf415d2a0138"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDOL3PoBc5yoG4q",
+      "title": "formatting",
+      "url": "https://github.com/oldgrognard/ccsv-id/pull/6",
+      "state": "MERGED",
+      "author": "oldgrognard",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-17T00:46:28Z",
+      "updatedAt": "2024-06-17T00:47:04Z",
+      "baseRepository": "oldgrognard/ccsv-id",
+      "baseRefName": "main",
+      "baseRefOid": "407af8a933d659112b704205e5214b4dab59a1e4",
+      "headRepository": "oldgrognard/ccsv-id",
+      "headRefName": "3-add-a-blank-line-bafore-the-abnf-before-block",
+      "headRefOid": "278dd560c1284ef8bdbeb7afb96dbcbf3118b594",
+      "closedAt": "2024-06-17T00:47:00Z",
+      "mergedAt": "2024-06-17T00:47:00Z",
+      "mergedBy": "oldgrognard",
+      "mergeCommit": {
+        "oid": "e91b1966f27f0dc77714b1188a4029cf9ab913ce"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
