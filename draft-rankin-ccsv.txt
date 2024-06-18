@@ -4,8 +4,8 @@
 
 Network Working Group                                          M. Rankin
 Internet-Draft                                   ICF International, Inc.
-Intended status: Informational                              17 June 2024
-Expires: 19 December 2024
+Intended status: Informational                              18 June 2024
+Expires: 20 December 2024
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 December 2024.
+   This Internet-Draft will expire on 20 December 2024.
 
 Copyright Notice
 
@@ -102,30 +102,31 @@ Table of Contents
    In order for a file to be a CCSV, it MUST adhere to the following
    formatting rules:
 
-   1.  A Record Separator (RS - ASCII entity %x1F) is used between each
-       record in the file including the header.
+   1.  A Record Separator RS (U+001E) is used between each record in the
+       file including the header.
 
-   2.  A Unit Separator (US - ASCII entity %x1E) is used between each
-       field in a record.
+   2.  A Unit Separator US (U+001F) is used between each field in a
+       record.
 
    3.  A CCSV MUST begin with a header.  The header consists of the
-       names of the columns separated with (US) entities.
+       names of the columns separated with US (U+001F) entities.
 
-   4.  The header is terminated with the (RS) entity if the document
-       contains any records.
+   4.  The header is terminated with the RS (U+001E) entity if the
+       document contains any records.
 
-   5.  The header and each record MUST contain the same number of (US)
-       entities i.e., the header and each record MUST have the same
-       number of fields.
+   5.  The header and each record MUST contain the same number of US
+       (U+001F) entities i.e., the header and each record MUST have the
+       same number of fields.
 
-   6.  Each record in the body is delimited with a (RS) entity.  Note
-       that carriage returns and line feeds are not part of the
+   6.  Each record in the body is delimited with a RS (U+001E) entity.
+       Note that carriage returns and line feeds are not part of the
        delimiter and are valid characters in the body of a field.
 
-   7.  Each field within a record is delimited with the (US) entity.
+   7.  Each field within a record is delimited with the US (U+001F)
+       entity.
 
-   8.  The (US) entity and the (RS) separator MUST NOT appear in the
-       body of a field.
+   8.  The US (U+001F) entity and the RS (U+001E) separator MUST NOT
+       appear in the body of a field.
 
    The ABNF grammar [STD68] appears as follows:
 
