@@ -200,7 +200,7 @@ US = %x1F ; unit separator
    Person & email address to contact for further information:
 
        Mike Rankin
-       ICF
+       ICF International, Inc.
        1902 Reston Metro Plaza
        Reston, VA  20190
        USA
@@ -257,4 +257,4 @@ Author's Address
 
    Mike Rankin
    ICF International, Inc.
-   Email: mrankin@oldgrognard.pub
+   Email: mrankin@icf.com
