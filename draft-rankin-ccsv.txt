@@ -199,7 +199,11 @@ US = %x1F ; unit separator
 
    Person & email address to contact for further information:
 
-   Mike Rankin ICF 1902 Reston Metro Plaza Reston, VA 20190 USA
+       Mike Rankin
+       ICF
+       1902 Reston Metro Plaza
+       Reston, VA  20190
+       USA
 
        mrankin@icf.com
 
