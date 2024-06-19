@@ -112,7 +112,7 @@ Interoperability considerations: See {{interoperability-considerations}}
 Published specification: TBD
 
 Applications that use this media type:
-  
+
 	Databases, spreadsheets, statistical programs, and data conversion utilities
 
 Fragment identifier considerations: N/A
