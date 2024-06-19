@@ -106,28 +106,30 @@ Table of Contents
 
 2.1.1.  Formatting Rules
 
-   1.  A Record Separator RS (U+001E) is used between each record in the
+   1.  The file MUST NOT begin with a Byte Order Mark (U+FEFF).
+
+   2.  The file MUST use UTF-8 encoding.  Since US-ASCII is a subset of
+       UTF-8, programs may create CCSV files with that encoding.  A
+       consuming program may not be able to interpret all characters if
+       it only works with US-ASCII and SHOULD work with UTF-8 if the
+       source is unknown.
+
+   3.  A Record Separator RS (U+001E) is used between each record in the
        file including the header.
 
-   2.  A Unit Separator US (U+001F) is used between each field in a
-       record.
+   4.  A Unit Separator US (U+001F) is used between each field in a
+       record.  Note that carriage returns and line feeds are not part
+       of the delimiter and are valid characters in the body of a field.
 
-   3.  A CCSV MUST begin with a header.  The header consists of the
+   5.  A CCSV MUST begin with a header.  The header consists of the
        names of the columns separated with US (U+001F) entities.
 
-   4.  The header is terminated with the RS (U+001E) entity if the
+   6.  The header is terminated with the RS (U+001E) entity if the
        document contains any records.
 
-   5.  The header and each record MUST contain the same number of US
-       (U+001F) entities i.e., the header and each record MUST have the
-       same number of fields.
-
-   6.  Each record in the body is delimited with a RS (U+001E) entity.
-       Note that carriage returns and line feeds are not part of the
-       delimiter and are valid characters in the body of a field.
-
-   7.  Each field within a record is delimited with the US (U+001F)
-       entity.
+   7.  The header and each record, if any, MUST contain the same number
+       of US (U+001F) entities i.e., the header and each record MUST
+       have the same number of fields.
 
    8.  The US (U+001F) entity and the RS (U+001E) separator MUST NOT
        appear in the body of a field.
