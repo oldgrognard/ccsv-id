@@ -1194,10 +1194,10 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
           </h4>
 <ol start="1" type="1" class="normal type-1" id="section-2.1.1-1">
 <li id="section-2.1.1-1.1">
-              <p id="section-2.1.1-1.1.1">The file <span class="bcp14">MUST NOT</span> begin with a Byte Order Mark (U+FEFF).<a href="#section-2.1.1-1.1.1" class="pilcrow">¶</a></p>
+              <p id="section-2.1.1-1.1.1">The file <span class="bcp14">MUST</span> use UTF-8 encoding. Since US-ASCII is a subset of UTF-8, programs may create CCSV files with that encoding.  A consuming program may not be able to interpret all characters if it only works with US-ASCII and <span class="bcp14">SHOULD</span> work with UTF-8 if the source is unknown.<a href="#section-2.1.1-1.1.1" class="pilcrow">¶</a></p>
 </li>
             <li id="section-2.1.1-1.2">
-              <p id="section-2.1.1-1.2.1">The file <span class="bcp14">MUST</span> use UTF-8 encoding. Since US-ASCII is a subset of UTF-8, programs may create CCSV files with that encoding.  A consuming program may not be able to interpret all characters if it only works with US-ASCII and <span class="bcp14">SHOULD</span> work with UTF-8 if the source is unknown.<a href="#section-2.1.1-1.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.1.1-1.2.1">The file <span class="bcp14">MUST NOT</span> begin with a Byte Order Mark (U+FEFF).<a href="#section-2.1.1-1.2.1" class="pilcrow">¶</a></p>
 </li>
             <li id="section-2.1.1-1.3">
               <p id="section-2.1.1-1.3.1">A Record Separator RS (U+001E) is used between each record in the file including the header.<a href="#section-2.1.1-1.3.1" class="pilcrow">¶</a></p>

@@ -106,13 +106,13 @@ Table of Contents
 
 2.1.1.  Formatting Rules
 
-   1.  The file MUST NOT begin with a Byte Order Mark (U+FEFF).
-
-   2.  The file MUST use UTF-8 encoding.  Since US-ASCII is a subset of
+   1.  The file MUST use UTF-8 encoding.  Since US-ASCII is a subset of
        UTF-8, programs may create CCSV files with that encoding.  A
        consuming program may not be able to interpret all characters if
        it only works with US-ASCII and SHOULD work with UTF-8 if the
        source is unknown.
+
+   2.  The file MUST NOT begin with a Byte Order Mark (U+FEFF).
 
    3.  A Record Separator RS (U+001E) is used between each record in the
        file including the header.
