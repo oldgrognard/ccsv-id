@@ -53,6 +53,8 @@ A CCSV (Control-Character-Separated Values file) is a file format that enables m
 
 In order for a file to be a CCSV, it MUST adhere to the following formatting rules:
 
+### Formatting Rules
+
 1. A Record Separator RS (U+001E) is used between each record in the file including the header.
 1. A Unit Separator US (U+001F) is used between each field in a record.
 1. A CCSV MUST begin with a header.  The header consists of the names of the columns separated with US (U+001F) entities.
@@ -71,17 +73,23 @@ header = name *( US name )
 record = field *( US field )
 name = field
 field = *VCHAR
-VCHAR = %x21-7E ; visible characters
+VCHAR = %x00-1D / %x20-D7FF / %xE000-10FFFF ; all characters except the designated delimiters and surrogates
 RS = %x1E ; record separator
 US = %x1F ; unit separator
 ~~~~
 
 # Encoding Considerations
+CCSV files MUST be encoded using UTF-8 {{!RFC3629}}.
+
+Implementations MUST NOT add a byte order mark (U+FEFF) to the beginning of the file or networked-transmitted text.
 
 # Security Considerations
 
-TODO Security
+CCSV files alone are considered relatively harmless as there is no additional prescribed processing. However, the file may be parsed and further processed by the recipient. To the extent that a receiving application executes arbitrary system level commands from strings contained in a CCSV file, they may be at risk.
 
+# Interoperability Considerations
+
+Adherance to the Formatting Rules {{formatting-rules}} and the Encoding Considerations {{encoding-considerations}} ensures a high level of interoperability.
 
 # IANA Considerations
 
@@ -95,15 +103,16 @@ Required parameters: N/A
 
 Optional parameters: N/A
 
-Encoding considerations: utf-8
+Encoding considerations: See {{encoding-considerations}}
 
-Security considerations:
+Security considerations: See {{security-considerations}}
 
-Interoperability considerations:
+Interoperability considerations: See {{interoperability-considerations}}
 
 Published specification: TBD
 
 Applications that use this media type:
+  Databases, spreadsheets, statistical programs, and data conversion utilities
 
 Fragment identifier considerations: N/A
 
