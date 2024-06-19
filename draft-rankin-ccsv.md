@@ -27,7 +27,7 @@ author:
  -
     fullname: "Mike Rankin"
     organization: "ICF International, Inc."
-    email: "mrankin@oldgrognard.pub"
+    email: "mrankin@icf.com"
 
 normative:
 
@@ -127,7 +127,7 @@ Additional information:
 Person & email address to contact for further information:
 
 	Mike Rankin
-	ICF
+	ICF International, Inc.
 	1902 Reston Metro Plaza
 	Reston, VA  20190
 	USA
