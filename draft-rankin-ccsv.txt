@@ -114,12 +114,12 @@ Table of Contents
 
    2.  The file MUST NOT begin with a Byte Order Mark (U+FEFF).
 
-   3.  A Record Separator RS (U+001E) is used between each record in the
-       file including the header.
-
-   4.  A Unit Separator US (U+001F) is used between each field in a
+   3.  A Unit Separator US (U+001F) is used between each field in a
        record.  Note that carriage returns and line feeds are not part
        of the delimiter and are valid characters in the body of a field.
+
+   4.  A Record Separator RS (U+001E) is used between each record in the
+       file including the header.
 
    5.  A CCSV MUST begin with a header.  The header consists of the
        names of the columns separated with US (U+001F) entities.
