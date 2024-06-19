@@ -112,7 +112,8 @@ Interoperability considerations: See {{interoperability-considerations}}
 Published specification: TBD
 
 Applications that use this media type:
-  Databases, spreadsheets, statistical programs, and data conversion utilities
+  
+	Databases, spreadsheets, statistical programs, and data conversion utilities
 
 Fragment identifier considerations: N/A
 
@@ -125,13 +126,19 @@ Additional information:
 
 Person & email address to contact for further information:
 
+  Mike Rankin
+	ICF
+	1902 Reston Metro Plaza
+	Reston, VA  20190
+	USA
+
+	mrankin@icf.com
+
 Intended usage: COMMON
 
 Restrictions on usage: N/A
 
-Author: Mike Rankin
-
-Change controller:
+Author/Change controller: Mike Rankin
 
 Provisional registration?
 
