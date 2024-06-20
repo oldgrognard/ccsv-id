@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-18T00:18:02.606566+00:00",
+  "timestamp": "2024-06-20T00:17:32.978462+00:00",
   "repo": "oldgrognard/ccsv-id",
   "labels": [
     {
@@ -53,18 +53,33 @@
     {
       "number": 1,
       "id": "I_kwDOL3PoBc6MZrnT",
-      "title": "RS is U+001E, US is U+001F, but you really want RS (U+001E) and FS (U+001C)",
+      "title": "RS is U+001E, US is U+001F",
       "url": "https://github.com/oldgrognard/ccsv-id/issues/1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "cabo",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-06-16T08:18:05Z",
-      "updatedAt": "2024-06-16T08:18:05Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-06-18T04:26:15Z",
+      "closedAt": "2024-06-18T02:37:17Z",
+      "comments": [
+        {
+          "author": "oldgrognard",
+          "authorAssociation": "OWNER",
+          "body": "Can you help me better understand why the FS (U+001C) should be used instead of the US (U+001E)? I understand that the four control characters (FS, GS, RS, and US) are intentionally vague while maintaining a firm hierarchy.  \r\n\r\nI relied on Lammert Bies' ASCII history lesson in his [ASCII character map article](https://www.lammertbies.nl/comm/info/ascii-characters) to provide the common definitions of the control characters in question.  The definitions there seem to suggest that the unit separator (US) should be used to delimit the fields, and the record separator (RS) should be used to separate the records of a table.  \r\n\r\nI did find an example that supports the use of the FS to separate fields.  That was the ANSI/NIST-ITL Standard, which defined its \"Traditional Encoding.\" to use the FS to separate logical records.  They also needed all four separators to manage their data.\r\n\r\nIf we adopted the FS to separate the fields in the data, wouldn't that confusingly invert the hierarchy?\r\n\r\nIn the case of the CCSV, we only need two of the unit separator control characters.  If using the popular definitions of the separators, there is no need to use a file separator since the CCSV itself is a file.  The group separator (GS) also seems unnecessary since we work exclusively with rectangular data.\r\n\r\n-edit: Oh, I see there is an error in the rules section that needs to be corrected regarding the separators.\r\n\r\nI'm interested to hear where my thinking has missed the mark.",
+          "createdAt": "2024-06-18T02:24:48Z",
+          "updatedAt": "2024-06-18T02:28:05Z"
+        },
+        {
+          "author": "cabo",
+          "authorAssociation": "NONE",
+          "body": "You are completely right about using RS for the lines and US for the fields.  Sorry, I did this from memory, and apparently misremembered...\r\n",
+          "createdAt": "2024-06-18T04:25:54Z",
+          "updatedAt": "2024-06-18T04:25:54Z"
+        }
+      ]
     },
     {
       "number": 2,
@@ -219,6 +234,34 @@
       "mergedBy": "oldgrognard",
       "mergeCommit": {
         "oid": "e91b1966f27f0dc77714b1188a4029cf9ab913ce"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 7,
+      "id": "PR_kwDOL3PoBc5yxLvt",
+      "title": "Separator references in the rules are incorrect",
+      "url": "https://github.com/oldgrognard/ccsv-id/pull/7",
+      "state": "MERGED",
+      "author": "oldgrognard",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Correcting the separator references and updating the syntax to us the U+0000 format.",
+      "createdAt": "2024-06-18T02:36:41Z",
+      "updatedAt": "2024-06-18T02:37:21Z",
+      "baseRepository": "oldgrognard/ccsv-id",
+      "baseRefName": "main",
+      "baseRefOid": "e91b1966f27f0dc77714b1188a4029cf9ab913ce",
+      "headRepository": "oldgrognard/ccsv-id",
+      "headRefName": "1-rs-is-u+001e-us-is-u+001f-but-you-really-want-rs-u+001e-and-fs-u+001c",
+      "headRefOid": "1db869b12afae8c3be0840a2edb67d5c3c4fbdc0",
+      "closedAt": "2024-06-18T02:37:16Z",
+      "mergedAt": "2024-06-18T02:37:16Z",
+      "mergedBy": "oldgrognard",
+      "mergeCommit": {
+        "oid": "a7f25bf19f9f03eb36b084c058fda427db676b51"
       },
       "comments": [],
       "reviews": []
