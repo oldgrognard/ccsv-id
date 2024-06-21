@@ -4,8 +4,8 @@
 
 Network Working Group                                          M. Rankin
 Internet-Draft                                   ICF International, Inc.
-Intended status: Informational                              19 June 2024
-Expires: 21 December 2024
+Intended status: Informational                              21 June 2024
+Expires: 23 December 2024
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 December 2024.
+   This Internet-Draft will expire on 23 December 2024.
 
 Copyright Notice
 
@@ -68,6 +68,12 @@ Table of Contents
      2.1.  Definition of the CCSV format
        2.1.1.  Formatting Rules
    3.  Encoding Considerations
+     3.1.  Why UTF-8?
+       3.1.1.  Compatibility
+       3.1.2.  Internationalization
+       3.1.3.  Efficiency
+       3.1.4.  Standardization
+       3.1.5.  Future-Proofing
    4.  Security Considerations
    5.  Interoperability Considerations
    6.  IANA Considerations
@@ -114,25 +120,24 @@ Table of Contents
 
    2.  The file MUST NOT begin with a Byte Order Mark (U+FEFF).
 
-   3.  A Unit Separator US (U+001F) is used between each field in a
+   3.  A CCSV MUST begin with a header.  The header consists of the
+       names of the columns separated with US (U+001F) entities.
+
+   4.  A Unit Separator US (U+001F) is used between each field in a
        record.  Note that carriage returns and line feeds are not part
        of the delimiter and are valid characters in the body of a field.
 
-   4.  A Record Separator RS (U+001E) is used between each record in the
+   5.  A Record Separator RS (U+001E) is used between each record in the
        file including the header.
 
-   5.  A CCSV MUST begin with a header.  The header consists of the
-       names of the columns separated with US (U+001F) entities.
-
-   6.  The header is terminated with the RS (U+001E) entity if the
-       document contains any records.
-
-   7.  The header and each record, if any, MUST contain the same number
+   6.  The header and each record, if any, MUST contain the same number
        of US (U+001F) entities i.e., the header and each record MUST
        have the same number of fields.
 
-   8.  The US (U+001F) entity and the RS (U+001E) separator MUST NOT
-       appear in the body of a field.
+   7.  Empty fields are represented by consecutive delimiters.
+
+   8.  The US (U+001F) entity and the RS (U+001E) entity MUST NOT appear
+       in the body of a field.
 
    The ABNF grammar [STD68] appears as follows:
 
@@ -151,6 +156,43 @@ US = %x1F ; unit separator
 
    Implementations MUST NOT add a byte order mark (U+FEFF) to the
    beginning of the file or networked-transmitted text.
+
+3.1.  Why UTF-8?
+
+3.1.1.  Compatibility
+
+   UTF-8 is widely supported across different platforms, operating
+   systems, and languages.  This ensures that CCSV files can be opened
+   and read correctly regardless of the environment they are used in.
+
+3.1.2.  Internationalization
+
+   UTF-* supports a vast range of characters from various languages,
+   including those that use non-Latin scripts.  This is crucial for data
+   that might include international names, addresses, or other text in
+   multiple languages, ensuring that all characters are preserved and
+   displayed correctly.
+
+3.1.3.  Efficiency
+
+   UTF-8 is a variable-width encoding scheme that uses 1 to 4 bytes for
+   each character.  It is efficient for encoding text that is primarily
+   in English, as it uses only one byte for themost common characters,
+   but can still accommodate characters from other languages when
+   needed.
+
+3.1.4.  Standardization
+
+   By requiring UTF-8, the CCSV format ensures a standard way of
+   encoding text, which simplifies processing, parsing, and exchanging
+   files.  It helps in avoiding the complexities and potential errors
+   that can arise from dealing with multiple encodings.
+
+3.1.5.  Future-Proofing
+
+   As the internet and technologies continue to evolve, UTF-8 remains a
+   robust and forward-compatible choice, ensuring that CCSV files remain
+   accessible and usable in the long term
 
 4.  Security Considerations
 
