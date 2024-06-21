@@ -57,13 +57,12 @@ In order for a file to be a CCSV, it MUST adhere to the following formatting rul
 
 1. The file MUST use UTF-8 encoding. Since US-ASCII is a subset of UTF-8, programs may create CCSV files with that encoding.  A consuming program may not be able to interpret all characters if it only works with US-ASCII and SHOULD work with UTF-8 if the source is unknown.
 1. The file MUST NOT begin with a Byte Order Mark (U+FEFF).
+1. A CCSV MUST begin with a header.  The header consists of the names of the columns separated with US (U+001F) entities.
 1. A Unit Separator US (U+001F) is used between each field in a record. Note that carriage returns and line feeds are not part of the delimiter and are valid characters in the body of a field.
 1. A Record Separator RS (U+001E) is used between each record in the file including the header.
-1. A CCSV MUST begin with a header.  The header consists of the names of the columns separated with US (U+001F) entities.
-1. The header is terminated with the RS (U+001E) entity if the document contains any records.
 1. The header and each record, if any, MUST contain the same number of US (U+001F) entities i.e., the header and each record MUST have the same number of fields.
-1. The US (U+001F) entity and the RS (U+001E) separator MUST NOT appear in the body of a field.
-
+1. Empty fields are represented by consecutive delimiters.
+1. The US (U+001F) entity and the RS (U+001E) entity MUST NOT appear in the body of a field.
 
 The ABNF grammar {{!STD68}} appears as follows:
 
@@ -82,6 +81,28 @@ US = %x1F ; unit separator
 CCSV files MUST be encoded using UTF-8 {{!RFC3629}}.
 
 Implementations MUST NOT add a byte order mark (U+FEFF) to the beginning of the file or networked-transmitted text.
+
+## Why UTF-8?
+
+### Compatibility
+
+UTF-8 is widely supported across different platforms, operating systems, and languages.  This ensures that CCSV files can be opened and read correctly regardless of the environment they are used in.
+
+### Internationalization
+
+UTF-* supports a vast range of characters from various languages, including those that use non-Latin scripts. This is crucial for data that might include international names, addresses, or other text in multiple languages, ensuring that all characters are preserved and displayed correctly.
+
+### Efficiency
+
+UTF-8 is a variable-width encoding scheme that uses 1 to 4 bytes for each character. It is efficient for encoding text that is primarily in English, as it uses only one byte for themost common characters, but can still accommodate characters from other languages when needed.
+
+### Standardization
+
+By requiring UTF-8, the CCSV format ensures a standard way of encoding text, which simplifies processing, parsing, and exchanging files. It helps in avoiding the complexities and potential errors that can arise from dealing with multiple encodings.
+
+### Future-Proofing
+
+As the internet and technologies continue to evolve, UTF-8 remains a robust and forward-compatible choice, ensuring that CCSV files remain accessible and usable in the long term
 
 # Security Considerations
 
