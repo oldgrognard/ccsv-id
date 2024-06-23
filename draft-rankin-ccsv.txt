@@ -4,8 +4,8 @@
 
 Network Working Group                                          M. Rankin
 Internet-Draft                                   ICF International, Inc.
-Intended status: Informational                              21 June 2024
-Expires: 23 December 2024
+Intended status: Informational                              23 June 2024
+Expires: 25 December 2024
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 23 December 2024.
+   This Internet-Draft will expire on 25 December 2024.
 
 Copyright Notice
 
@@ -167,7 +167,7 @@ US = %x1F ; unit separator
 
 3.1.2.  Internationalization
 
-   UTF-* supports a vast range of characters from various languages,
+   UTF-8 supports a vast range of characters from various languages,
    including those that use non-Latin scripts.  This is crucial for data
    that might include international names, addresses, or other text in
    multiple languages, ensuring that all characters are preserved and
