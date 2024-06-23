@@ -90,7 +90,7 @@ UTF-8 is widely supported across different platforms, operating systems, and lan
 
 ### Internationalization
 
-UTF-* supports a vast range of characters from various languages, including those that use non-Latin scripts. This is crucial for data that might include international names, addresses, or other text in multiple languages, ensuring that all characters are preserved and displayed correctly.
+UTF-8 supports a vast range of characters from various languages, including those that use non-Latin scripts. This is crucial for data that might include international names, addresses, or other text in multiple languages, ensuring that all characters are preserved and displayed correctly.
 
 ### Efficiency
 
