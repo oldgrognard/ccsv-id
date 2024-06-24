@@ -36,7 +36,7 @@ informative:
 
 --- abstract
 
-This document documents the format used for Control-Character-Separated Values (CCSV) files and registers the associated MIME type "text/ccsv".
+This document establishes the format used for Control-Character-Separated Values (CCSV) files and registers the associated MIME type "text/ccsv".
 
 
 --- middle
