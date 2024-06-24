@@ -4,8 +4,8 @@
 
 Network Working Group                                          M. Rankin
 Internet-Draft                                   ICF International, Inc.
-Intended status: Informational                              23 June 2024
-Expires: 25 December 2024
+Intended status: Informational                              24 June 2024
+Expires: 26 December 2024
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 25 December 2024.
+   This Internet-Draft will expire on 26 December 2024.
 
 Copyright Notice
 
@@ -131,8 +131,8 @@ Table of Contents
        file including the header.
 
    6.  The header and each record, if any, MUST contain the same number
-       of US (U+001F) entities i.e., the header and each record MUST
-       have the same number of fields.
+       of US (U+001F) entities.  For example, the header and each record
+       MUST have the same number of fields.
 
    7.  Empty fields are represented by consecutive delimiters.
 
@@ -177,7 +177,7 @@ US = %x1F ; unit separator
 
    UTF-8 is a variable-width encoding scheme that uses 1 to 4 bytes for
    each character.  It is efficient for encoding text that is primarily
-   in English, as it uses only one byte for themost common characters,
+   in English, as it uses only one byte for the most common characters,
    but can still accommodate characters from other languages when
    needed.
 
@@ -204,7 +204,7 @@ US = %x1F ; unit separator
 
 5.  Interoperability Considerations
 
-   Adherance to the Formatting Rules Section 2.1.1 and the Encoding
+   Adherence to the Formatting Rules Section 2.1.1 and the Encoding
    Considerations Section 3 ensures a high level of interoperability.
 
 6.  IANA Considerations
