@@ -14,7 +14,7 @@ Expires: 26 December 2024
 
 Abstract
 
-   This document documents the format used for Control-Character-
+   This document establishes the format used for Control-Character-
    Separated Values (CCSV) files and registers the associated MIME type
    "text/ccsv".
 
