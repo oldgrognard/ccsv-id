@@ -4,8 +4,8 @@
 
 Network Working Group                                          M. Rankin
 Internet-Draft                                   ICF International, Inc.
-Intended status: Informational                              24 June 2024
-Expires: 26 December 2024
+Intended status: Informational                              25 June 2024
+Expires: 27 December 2024
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -14,7 +14,7 @@ Expires: 26 December 2024
 
 Abstract
 
-   This document documents the format used for Control-Character-
+   This document establishes the format used for Control-Character-
    Separated Values (CCSV) files and registers the associated MIME type
    "text/ccsv".
 
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 26 December 2024.
+   This Internet-Draft will expire on 27 December 2024.
 
 Copyright Notice
 
@@ -301,4 +301,4 @@ Author's Address
 
    Mike Rankin
    ICF International, Inc.
-   Email: mrankin@icf.com
+   Email: mrankin@oldgrognard.pub
