@@ -60,7 +60,8 @@ In order for a file to be a CCSV, it MUST adhere to the following formatting rul
 1. A CCSV MUST begin with a header.  The header consists of the names of the columns separated with US (U+001F) entities.
 1. A Unit Separator US (U+001F) is used between each field in a record. Note that carriage returns and line feeds are not part of the delimiter and are valid characters in the body of a field.
 1. A Record Separator RS (U+001E) is used between each record in the file including the header.
-1. The header and each record, if any, MUST contain the same number of US (U+001F) entities. For example, the header and each record MUST have the same number of fields.
+1. A Record Separator RS (U+001E) MAY appear as the last entity of the last record but is NOT RECOMMENDED.
+1. The header and each record, if any, MUST contain the same number of US (U+001F) entities.  Consequently, the header and every record will have the same number of fields.
 1. Empty fields are represented by consecutive delimiters.
 1. The US (U+001F) entity and the RS (U+001E) entity MUST NOT appear in the body of a field.
 
