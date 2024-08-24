@@ -4,8 +4,8 @@
 
 Network Working Group                                          M. Rankin
 Internet-Draft                                   ICF International, Inc.
-Intended status: Informational                              24 June 2024
-Expires: 26 December 2024
+Intended status: Informational                            24 August 2024
+Expires: 25 February 2025
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 26 December 2024.
+   This Internet-Draft will expire on 25 February 2025.
 
 Copyright Notice
 
@@ -130,13 +130,16 @@ Table of Contents
    5.  A Record Separator RS (U+001E) is used between each record in the
        file including the header.
 
-   6.  The header and each record, if any, MUST contain the same number
-       of US (U+001F) entities.  For example, the header and each record
-       MUST have the same number of fields.
+   6.  A Record Separator RS (U+001E) MAY appear as the last entity of
+       the last record but is NOT RECOMMENDED.
 
-   7.  Empty fields are represented by consecutive delimiters.
+   7.  The header and each record, if any, MUST contain the same number
+       of US (U+001F) entities.  Consequently, the header and every
+       record will have the same number of fields.
 
-   8.  The US (U+001F) entity and the RS (U+001E) entity MUST NOT appear
+   8.  Empty fields are represented by consecutive delimiters.
+
+   9.  The US (U+001F) entity and the RS (U+001E) entity MUST NOT appear
        in the body of a field.
 
    The ABNF grammar [STD68] appears as follows:
