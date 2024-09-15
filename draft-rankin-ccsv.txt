@@ -3,9 +3,9 @@
 
 
 Network Working Group                                          M. Rankin
-Internet-Draft                                   ICF International, Inc.
-Intended status: Informational                            24 August 2024
-Expires: 25 February 2025
+Internet-Draft                                         15 September 2024
+Intended status: Informational                                          
+Expires: 19 March 2025
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 25 February 2025.
+   This Internet-Draft will expire on 19 March 2025.
 
 Copyright Notice
 
@@ -247,9 +247,8 @@ US = %x1F ; unit separator
    Person & email address to contact for further information:
 
        Mike Rankin
-       ICF International, Inc.
-       1902 Reston Metro Plaza
-       Reston, VA  20190
+       2108 Independence Dr
+       Chambersburg, PA  17201
        USA
 
        mrankin@icf.com
@@ -303,5 +302,4 @@ Acknowledgments
 Author's Address
 
    Mike Rankin
-   ICF International, Inc.
    Email: mrankin@oldgrognard.pub
