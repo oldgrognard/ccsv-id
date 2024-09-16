@@ -1,6 +1,6 @@
-# Control Character Separated Value Files
+# Common Format and Media Type for Control-Character-Separated Values (CCSV) Files
 
-This is the working area for the individual Internet-Draft, "Control Character Separated Value Files".
+This is the working area for the individual Internet-Draft, "Common Format and Media Type for Control-Character-Separated Values (CCSV) Files".
 
 * [Editor's Copy](https://oldgrognard.github.io/ccsv-id/#go.draft-rankin-ccsv.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-rankin-ccsv)
