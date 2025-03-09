@@ -12,9 +12,10 @@ v: 3
 # area: AREA
 # workgroup: WG Working Group
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - data exchange
+ - rectangular data
+ - multi-platform
+ - serial data streams
 venue:
 #  group: WG
 #  type: Working Group
@@ -26,7 +27,7 @@ venue:
 author:
  -
     fullname: "Mike Rankin"
-    email: "mrankin@oldgrognard.pub"
+    email: "mrankin@reactor.zone"
 
 normative:
 
@@ -130,7 +131,7 @@ Security considerations: See {{security-considerations}}
 
 Interoperability considerations: See {{interoperability-considerations}}
 
-Published specification: TBD
+Published specification: https://ccsv.io
 
 Applications that use this media type:
 
@@ -152,7 +153,7 @@ Person & email address to contact for further information:
 	Chambersburg, PA  17201
 	USA
 
-	mrankin@icf.com
+	mrankin@reactor.zone
 
 Intended usage: COMMON
 
@@ -168,4 +169,4 @@ Provisional registration?
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+The author would like to thank Rob Seitler, Alan Maslan, Roger Kilian, Stephen Ziegler, and Carsten Bormann for their helpful suggestions.
