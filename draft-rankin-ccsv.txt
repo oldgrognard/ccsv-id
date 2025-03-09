@@ -3,9 +3,9 @@
 
 
 Network Working Group                                          M. Rankin
-Internet-Draft                                         16 September 2024
+Internet-Draft                                              9 March 2025
 Intended status: Informational                                          
-Expires: 20 March 2025
+Expires: 10 September 2025
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,11 +45,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 March 2025.
+   This Internet-Draft will expire on 10 September 2025.
 
 Copyright Notice
 
-   Copyright (c) 2024 IETF Trust and the persons identified as the
+   Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -229,7 +229,7 @@ US = %x1F ; unit separator
 
    Interoperability considerations: See Section 5
 
-   Published specification: TBD
+   Published specification: https://ccsv.io
 
    Applications that use this media type:
 
@@ -251,7 +251,7 @@ US = %x1F ; unit separator
        Chambersburg, PA  17201
        USA
 
-       mrankin@icf.com
+       mrankin@reactor.zone
 
    Intended usage: COMMON
 
@@ -297,9 +297,11 @@ US = %x1F ; unit separator
 
 Acknowledgments
 
-   TODO acknowledge.
+   The author would like to thank Rob Seitler, Alan Maslan, Roger
+   Kilian, Stephen Ziegler, and Carsten Bormann for their helpful
+   suggestions.
 
 Author's Address
 
    Mike Rankin
-   Email: mrankin@oldgrognard.pub
+   Email: mrankin@reactor.zone
