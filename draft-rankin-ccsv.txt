@@ -3,9 +3,9 @@
 
 
 Network Working Group                                          M. Rankin
-Internet-Draft                                              9 March 2025
+Internet-Draft                                               18 May 2025
 Intended status: Informational                                          
-Expires: 10 September 2025
+Expires: 19 November 2025
 
 
   Common Format and Media Type for Control-Character-Separated Values
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 September 2025.
+   This Internet-Draft will expire on 19 November 2025.
 
 Copyright Notice
 
@@ -297,9 +297,8 @@ US = %x1F ; unit separator
 
 Acknowledgments
 
-   The author would like to thank Rob Seitler, Alan Maslan, Roger
-   Kilian, Stephen Ziegler, and Carsten Bormann for their helpful
-   suggestions.
+   The author would like to thank Rob Seitler, Roger Kilian, Stephen
+   Ziegler, and Carsten Bormann for their helpful suggestions.
 
 Author's Address
 
