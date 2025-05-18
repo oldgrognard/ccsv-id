@@ -169,4 +169,4 @@ Provisional registration?
 # Acknowledgments
 {:numbered="false"}
 
-The author would like to thank Rob Seitler, Alan Maslan, Roger Kilian, Stephen Ziegler, and Carsten Bormann for their helpful suggestions.
+The author would like to thank Rob Seitler, Roger Kilian, Stephen Ziegler, and Carsten Bormann for their helpful suggestions.
